@@ -1,0 +1,16 @@
+<div class="introduction">
+  <h1 class="app-name">boop!</h1>
+  <h2>fun, anonymous music collaboration for everyone</h2>
+</div>
+
+<div class="account-actions">
+  <%- if context.current_account %>
+    <div class="welcome-back">
+      <p>Welcome back, <span><%= context.current_account.as(Account).username %></span>!</p>
+      <a class="btn btn-default btn-lg" href="/dashboard">Go To Dashboard</a>
+    </div>
+  <%- else %>
+    <a class="btn btn-primary btn-lg" href="/create-account">Create Account</a>
+    <a href="/login">Log In</a>
+  <%- end %>
+</div>

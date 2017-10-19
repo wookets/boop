@@ -1,0 +1,11 @@
+<h2 class="page-heading">Dashboard</h2>
+
+<h3 class="section-heading">Threads</h3>
+
+<%- unless threads.size == 0 %>
+  <%= render partial: "threads/_actions.ecr" %>
+  <%= render partial: "threads/_table.ecr" %>
+<%- else %>
+  <p class="well placeholder">No threads have been started yet. When you are collaborating on a thread, it will appear here.</p>
+  <%= render partial: "threads/_actions.ecr" %>
+<%- end %>

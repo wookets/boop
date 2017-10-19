@@ -1,0 +1,113 @@
+/*
+ * Globals
+ */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #FFFEFE;
+  background: #27203F; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  nav ul li {
+    display: inline;
+    margin-right: 30px; }
+    nav ul li:last-child {
+      margin-right: 0; }
+
+.alert {
+  font-size: 16px; }
+
+.vertical-spacing, .alert {
+  margin-bottom: 40px; }
+
+.nav-container {
+  background: black;
+  border-bottom: 1px solid #3c3161;
+  padding: 20px 0;
+  margin-bottom: 40px; }
+  .nav-container a {
+    color: #92d39d; }
+    .nav-container a:hover, .nav-container a:active, .nav-container a:focus {
+      color: #b6e2be; }
+
+a.btn-primary, button.btn-primary {
+  background-color: #A24D77;
+  border-color: #b86a91; }
+  a.btn-primary:hover, a.btn-primary:active, a.btn-primary:focus, button.btn-primary:hover, button.btn-primary:active, button.btn-primary:focus {
+    background-color: #b86a91;
+    border-color: #c98caa; }
+
+a {
+  color: #A24D77; }
+  a:hover, a:active, a:focus {
+    color: #b86a91; }
+
+/*
+ * Override Bootstrap's default container.
+ */
+@media (min-width: 1200px) {
+  .container {
+    width: 960px; } }
+
+.introduction {
+  margin-bottom: 80px; }
+
+h1.app-name {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 80px 0 40px 0; }
+
+.account-actions a {
+  margin-right: 30px; }
+  .account-actions a:last-child {
+    margin-right: 0; }
+
+.page-heading {
+  margin-bottom: 80px; }
+
+form fieldset {
+  margin-bottom: 40px; }
+
+.welcome-back p {
+  margin-bottom: 40px; }
+  .welcome-back p span {
+    font-weight: bold; }
+
+nav.application {
+  margin: 30px 0; }
+  nav.application h1 {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold; }
+  nav.application a.active {
+    color: #FFFEFE;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3c3161; }
+    nav.application a.active:hover {
+      text-decoration: none; }
+  nav.application li ul {
+    display: inline; }
+  nav.application .account-menu {
+    float: right; }
+
+.section-heading {
+  margin-bottom: 40px; }
+
+table.threads {
+  font-size: 16px; }
+
+.well.placeholder {
+  background: #120f1d;
+  border: 1px solid #3c3161;
+  font-size: 16px; }
+
+.thread-actions {
+  margin-top: 40px; }
+
+hr {
+  border: 1px solid #3c3161; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmJ1bmRsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

@@ -1,0 +1,166 @@
+$font-stack: 'Open Sans', sans-serif;
+
+/*
+ * Globals
+ */
+body {
+  font-family: $font-stack;
+  font-size: 18px;
+  color: #FFFEFE;
+  background: #27203F;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      display: inline;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.alert {
+  font-size: 16px;
+}
+
+.vertical-spacing, .alert {
+  margin-bottom: 40px;
+}
+
+.nav-container {
+  background: darken($color: #27203F, $amount: 20);
+  border-bottom: 1px solid lighten($color: #27203F, $amount: 10);
+  padding: 20px 0;
+  margin-bottom: 40px;
+
+  a {
+    color: #92d39d;
+
+    &:hover, &:active, &:focus {
+      color: lighten($color: #92d39d, $amount: 10);
+    }
+  }
+}
+
+a.btn-primary, button.btn-primary {
+  background-color: #A24D77;
+  border-color: lighten($color: #A24D77, $amount: 10);
+
+  &:hover, &:active, &:focus {
+    background-color: lighten($color: #A24D77, $amount: 10);
+    border-color: lighten($color: #A24D77, $amount: 20);
+  }
+}
+
+a {
+  color: #A24D77;
+
+  &:hover, &:active, &:focus {
+    color: lighten($color: #A24D77, $amount: 10);
+  }
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+.introduction {
+  margin-bottom: 80px;
+}
+
+h1.app-name {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 80px 0 40px 0;
+}
+
+.account-actions {
+  a {
+    margin-right: 30px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.page-heading {
+  margin-bottom: 80px;
+}
+
+form fieldset {
+  margin-bottom: 40px;
+}
+
+.welcome-back {
+  p {
+    margin-bottom: 40px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+nav.application {
+  margin: 30px 0;
+  
+  h1 {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  a.active {
+    color: #FFFEFE;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lighten($color: #27203F, $amount: 10);
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  li ul {
+    display: inline;
+  }
+
+  .account-menu {
+    float: right;
+  }
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+table.threads {
+  font-size: 16px;
+}
+
+.well.placeholder {
+  background: darken($color: #27203F, $amount: 10);
+  border: 1px solid lighten($color: #27203F, $amount: 10);
+  font-size: 16px;
+}
+
+.thread-actions {
+  margin-top: 40px;
+}
+
+hr {
+  border: 1px solid lighten($color: #27203F, $amount: 10);
+}

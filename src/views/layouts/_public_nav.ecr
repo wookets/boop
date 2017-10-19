@@ -1,0 +1,12 @@
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+
+    <%- if context.current_account %>
+      <li><a href="/logout">Log Out</a></li>
+    <%- else %>
+      <li><a href="/create-account">Create Account</a></li>
+      <li><a href="/login">Log In</a></li>
+    <%- end %>
+  </ul>
+</nav>

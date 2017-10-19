@@ -1,0 +1,5 @@
+<%- ["success", "info", "warning", "danger"].each do |message_type| %>
+  <%- if flash.has_key? message_type %>
+    <div class="alert alert-<%= message_type %>" role="alert"><%= flash[message_type] %></div>
+  <%- end %>
+<%- end %>

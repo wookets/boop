@@ -1,0 +1,14 @@
+<nav class="application">
+  <ul>
+    <li><h1>boop!</h1></li>
+    <li><a <%- if context.request.path == "/dashboard" %>class="active"<%- end %> href="/dashboard">Dashboard</a></li>
+    <li><a <%- if context.request.path == "/profile" %>class="active"<%- end %> href="/profile">Profile</a></li>
+    <li><a <%- if context.request.path == "/music-guide" %>class="active"<%- end %> href="/music-guide">Music Guide</a></li>
+    <li>
+      <ul class="account-menu">
+        <li><a <%- if context.request.path == "/edit-account" %>class="active"<%- end %> href="/edit-account">Account</a></li>
+        <li><a href="/logout">Log Out</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>

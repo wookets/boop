@@ -1,0 +1,11 @@
+/doc/
+/lib/
+/.crystal/
+/.shards/
+.env
+.amber_secret_key
+production.yml
+.DS_Store
+node_modules
+bin
+boop

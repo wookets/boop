@@ -147,6 +147,7 @@ table.threads {
 }
 
 .well.placeholder {
+  padding: 20px;
   background: darken($color: #27203F, $amount: 10);
   border: 1px solid lighten($color: #27203F, $amount: 10);
   font-size: 16px;

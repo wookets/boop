@@ -1,13 +1,14 @@
-const webpack = require('webpack');
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack')
+const path = require('path')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-let config = {
+module.exports = {
   entry: {
-    'application.js': './client/main.js'
+    'boop': './client/boop.js',
+    'global': './src/assets/javascripts/global.js'
   },
   output: {
-    filename: '[name]',
+    filename: '[name].js',
     path: path.resolve(__dirname, '../../public/dist')
   },
   module: {
@@ -50,8 +51,6 @@ let config = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('main.css'),
+    new ExtractTextPlugin('[name].css'),
   ]
-};
-
-module.exports = config;
+}

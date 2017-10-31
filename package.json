@@ -6,9 +6,10 @@
   "author": "Amber",
   "license": "UNLICENSED",
   "scripts": {
-    "dev:build": "webpack --config config/webpack/development.js",
+    "clean": "rm -rf public/dist/*",
+    "dev:build": "npm run clean && webpack --config config/webpack/development.js",
     "dev:watch": "webpack -w --config config/webpack/development.js",
-    "release": "webpack -p --config config/webpack/production.js",
+    "release": "npm run clean && webpack -p --config config/webpack/production.js",
     "test": "jest"
   },
   "devDependencies": {

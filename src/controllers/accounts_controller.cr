@@ -8,7 +8,7 @@ class AccountsController < ApplicationController
   end
 
   def new
-    render "new.ecr", layout: "public.ecr"
+    render "new.ecr", layout: "global.ecr"
   end
 
   def create

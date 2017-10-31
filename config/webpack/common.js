@@ -4,18 +4,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 let config = {
   entry: {
-    'main.bundle.js': './src/assets/javascripts/main.js',
-    'main.bundle.css': './src/assets/stylesheets/main.scss'
+    'application.js': './client/main.js'
   },
   output: {
     filename: '[name]',
-    path: path.resolve(__dirname, '../../public/dist'),
-    publicPath: '/dist'
-  },
-  resolve: {
-    alias: {
-      amber: path.resolve(__dirname, '../../lib/amber/assets/js/amber.js')
-    }
+    path: path.resolve(__dirname, '../../public/dist')
   },
   module: {
     rules: [
@@ -52,15 +45,12 @@ let config = {
       {
         test: /\.js?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015']
-        }
+        loader: 'babel-loader'
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('main.bundle.css'),
+    new ExtractTextPlugin('main.css'),
   ]
 };
 

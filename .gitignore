@@ -9,3 +9,4 @@ production.yml
 node_modules
 bin
 boop
+public/dist/*

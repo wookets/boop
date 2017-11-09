@@ -2,7 +2,7 @@
 
 > Fun, anonymous music collaboration for everyone.
 
-This is still a work in progress and definitely not usable yet. I've started it mostly to work through using [Amber](https://amberframework.org) and [Crystal](https://crystal-lang.org).
+This is still a work in progress and definitely not usable yet. I've started it mostly to work through using [Amber](https://amberframework.org) and [Crystal](https://crystal-lang.org), as well as learning more about audio, MIDI, DSP, web audio, etc.
 
 ## Concept
 
